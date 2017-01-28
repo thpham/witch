@@ -19,8 +19,8 @@
 		},
 		{
 			"ImportPath": "github.com/go-martini/martini",
-			"Comment": "v1.0-184-g0c6ad59",
-			"Rev": "0c6ad5903d2bf9337762caa9c357247279c230c3"
+			"Comment": "v1.0-188-g22fa469",
+			"Rev": "22fa46961aabd2665cf3f1343b146d20028f5071"
 		},
 		{
 			"ImportPath": "github.com/martini-contrib/auth",
@@ -36,7 +36,7 @@
 		},
 		{
 			"ImportPath": "gopkg.in/yaml.v2",
-			"Rev": "e4d366fc3c7938e2958e662b4258c7a89e1f0e3e"
+			"Rev": "4c78c975fe7c825c6d1466c42be594d1d6f3aba6"
 		}
 	]
 }
