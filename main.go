@@ -56,9 +56,18 @@ func main() {
 	ser := NewServer(cfg.ListenAddr, &system.Controller{sys}, cfg)
 	go func() {
 		if err := ser.Start(); err != nil {
-			log.Fatalf("Start system server faile: %v", err)
+			log.Fatalf("Start system server failed: %v", err)
 		}
 	}()
+
+	if cfg.Mqtt.Enable {
+		mqtt := MqttClient(cfg.Mqtt.Broker, &system.Controller{sys}, cfg)
+		go func() {
+			if err := mqtt.Start(); err != nil {
+				log.Fatalf("Start mqtt client failed: %v", err)
+			}
+		}()
+	}
 
 	handleSignals(func() {
 		sys.Stop()

@@ -22,7 +22,20 @@ type Config struct {
 	PidFile string `yaml:"pid_file"`
 	// Auth is the username and password configuration.
 	Auth map[string]string `yaml:"auth"`
+	Mqtt struct {
+		Enable bool `yaml:"enable"`
+		Broker string `yaml:"broker"`
+		ClientID string `yaml:"client_id"`
+		Keepalive int `yaml:"keepalive"`
+		Username string `yaml:"username"`
+		Password string `yaml:"password"`
+		Actions_message struct {
+			Topic string `yaml:"topic"`
+			Qos byte `yaml:"qos"`
+		}
+	}
 }
+
 
 // Parse updates config with yaml config file.
 func (cfg *Config) Parse(file string) error {
