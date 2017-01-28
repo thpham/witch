@@ -1,9 +1,10 @@
 {
-	"ImportPath": "github.com/eleme/witch",
-	"GoVersion": "go1.6",
-	"GodepVersion": "v75",
+	"ImportPath": "github.com/Eagle-X/witch",
+	"GoVersion": "go1.7",
+	"GodepVersion": "v78",
 	"Packages": [
-		"github.com/eleme/witch"
+		"github.com/Eagle-X/witch",
+		"github.com/Eagle-X/witch/system"
 	],
 	"Deps": [
 		{
