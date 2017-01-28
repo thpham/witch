@@ -18,6 +18,16 @@
 			"Rev": "33e0aa1cb7c019ccc3fbe049a8262a6403d30504"
 		},
 		{
+			"ImportPath": "github.com/eclipse/paho.mqtt.golang",
+			"Comment": "v1.0.0-13-gd4f545e",
+			"Rev": "d4f545eb108a2d19f9b1a735689dbfb719bc21fb"
+		},
+		{
+			"ImportPath": "github.com/eclipse/paho.mqtt.golang/packets",
+			"Comment": "v1.0.0-13-gd4f545e",
+			"Rev": "d4f545eb108a2d19f9b1a735689dbfb719bc21fb"
+		},
+		{
 			"ImportPath": "github.com/go-martini/martini",
 			"Comment": "v1.0-188-g22fa469",
 			"Rev": "22fa46961aabd2665cf3f1343b146d20028f5071"
@@ -33,6 +43,10 @@
 		{
 			"ImportPath": "github.com/oxtoacart/bpool",
 			"Rev": "4e1c5567d7c2dd59fa4c7c83d34c2f3528b025d6"
+		},
+		{
+			"ImportPath": "golang.org/x/net/websocket",
+			"Rev": "f2499483f923065a842d38eb4c7f1927e6fc6e6d"
 		},
 		{
 			"ImportPath": "gopkg.in/yaml.v2",
