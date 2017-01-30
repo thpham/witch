@@ -12,4 +12,7 @@ dep:
 	godep get -t ${GO_PKGS}
 	godep save -t ${GO_PKGS}
 
+docker:
+	GOOS=linux GOARCH=amd64 go build
+
 .PHONY: witch
